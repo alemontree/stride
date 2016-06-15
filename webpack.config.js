@@ -11,10 +11,15 @@ module.exports = {
       test: /\.jsx?$/,
       exclude: /node_modules/,
       loader: 'react-hot!babel'
-    }]
+    }
+    // ,{ 
+    //   test: /\.json$/,
+    //   loader: 'json' 
+    // }
+    ]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js', '.jsx', '.json']
   },
   output: {
     path: __dirname + '/dist',
